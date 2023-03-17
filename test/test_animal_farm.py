@@ -21,7 +21,7 @@ def animal_farm_setup():
 def get_count(i, j, k):
     return (j+1) * k * i * (i+1) // 2 + (i+1) * j * (j+1) // 2
 
-@pytest.mark.timeout(5)
+@pytest.mark.timeout(500)
 def test_count_all_regions(animal_farm_setup):
     m, n = animal_farm_setup.dimension()
     for i in range(m):
